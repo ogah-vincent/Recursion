@@ -1,0 +1,14 @@
+function isPalindrome(word):
+    // Convert the word to lowercase for case-insensitive comparison
+    word = toLowerCase(word)
+    
+    // Base cases:
+    if length(word) = 0 OR length(word) = 1:
+        return true
+    
+    // Compare characters at the ends of the word
+    if word[0] = word[length(word) - 1]:
+        // Recursively test the rest of the word
+        return isPalindrome(substring(word, 1, length(word) - 2))
+    else:
+        return false
